@@ -1,0 +1,734 @@
+/* Import da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Estilo Geral */
+:root {
+    --red: #de0b1d;
+    --yellow: #F4E869;
+    --black: #1A0000;
+    --light-black: #4D4D4D;
+    --grey: #404242;
+    --white: #eee;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: .2s linear;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Estilo do Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--grey);
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.header .navbar a {
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: 900;
+}
+
+.header .navbar a:hover {
+    color: var(--red);
+}
+
+.header .navbar i {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 0 1rem;
+}
+
+.header .navbar .lang {
+    background-color: transparent;
+    border: .2rem solid var(--white);
+    display: inline;
+    padding: 1rem 0;
+    margin-right: 2rem;
+}
+
+.header .navbar .lang select {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.header .navbar .lang select option {
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+.header .navbar .lang i {
+    color: var(--red);
+}
+
+.header .navbar .lang:focus {
+    border: .2rem solid var(--red);
+}
+
+.header .navbar .btn {
+    background-color: transparent;
+    padding: 1rem 3rem;
+    border: .2rem solid var(--white);
+    border-radius: 3rem;
+    margin: 1rem;
+}
+
+.header .navbar .btn:hover {
+    border-color: var(--red);
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: var(--red);
+    font-weight: 900;
+}
+
+/* Estilo da HomePage */
+.home {
+    background: url(../images/homeAlone.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 0 5%;
+    flex-flow: column;
+}
+
+.home span {
+    font-size: 1.3rem;
+    color: var(--red);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.home .boxs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.home .boxs .box {
+    padding: 1rem;
+    color: var(--white);
+    border: .2rem solid var(--red);
+    display: inline;
+    font-size: 1.3rem;
+    margin: 1rem;
+    font-size: 900;
+}
+
+.home .boxs p {
+    font-size: 1.5rem;
+    color: var(--grey);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.home .boxs p i {
+    color: var(--red);
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.home .btn {
+    color: var(--white);
+    background-color: var(--grey);
+    padding: 1rem 3rem;
+    border: .2rem solid var(--red);
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.home .btn i {
+    margin-right: 1rem;
+}
+
+.home .btn:hover {
+    background-color: var(--red);
+    color: var(--grey);
+}
+
+
+/* Estilo dos Filmes */
+.movie {
+    padding: 3rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movie .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+.movie .head .text span {
+    color: var(--red);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.movie .head .text h3 {
+    color: var(--white);
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.movie .head .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.movie .head .btns .btn {
+    color: var(--white);
+    padding: .7rem 1rem;
+    border: .1rem solid var(--white);
+    border-radius: 3rem;
+    background-color: var(--grey);
+}
+
+.movie .head .btns .btn:hover {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.movie .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.movie .box-container .box {
+    background-color: var(--grey);
+    box-shadow: .1rem .5rem 1rem #666;
+}
+
+.movie .box-container .box img {
+    height: 35rem;
+    width: 25rem;
+    object-fit: cover;
+}
+
+.movie .box-container .box .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.movie .box-container .box .title h3 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: .5rem 0;
+}
+
+.movie .box-container .box .title p {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: .5rem 0;
+}
+
+.movie .box-container .box .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+}
+
+.movie .box-container .box .content .res {
+    padding: 1rem;
+    color: var(--white);
+    border: .2rem solid var(--red);
+}
+
+.movie .box-container .box .content .time {
+    color: var(--white);
+    font-size: 1.4rem;
+    text-transform: lowercase;
+}
+
+.movie .box-container .box .content .time i {
+    color: var(--red);
+    margin-right: .5rem;
+}
+
+.movie .box-container .box .content .star {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.movie .box-container .box .content .star i {
+    color: yellow;
+    margin-right: 1rem;
+}
+
+/* Estilo do "Sobre" */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem 10%;
+}
+
+.about .image {
+    width: 50%;
+}
+
+.about .image img {
+    height: 40rem;
+    object-fit: cover;
+    border: .3rem dotted var(--red);
+}
+
+.about .content h3 {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.about .content i.fa-clipboard {
+    color: var(--red);
+}
+
+
+.about .content span {
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.about .content p {
+    font-size: 1.2rem;
+    color: var(--grey);
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.services .service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.services .service i {
+    font-size: 4rem;
+    color: var(--white);
+    border: .2rem dotted var(--red);
+    padding: 2rem;
+    border-radius: 50%;
+    margin: .5rem;
+}
+
+.services .service i:hover {
+    color: var(--red);
+    background-color: var(--white);
+    transition: .5s;
+}
+
+.services .service h3 {
+    color: var(--red);
+}
+
+/* Rated Movies */
+
+.rated_movies {
+    padding: 4rem 2%;
+}
+
+.rated_movies .text {
+    text-align: center;
+}
+
+.rated_movies .text p {
+    font-size: 2rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.rated_movies .text h2 {
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.rated_movies .text .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem;
+    margin-right: 1rem;
+}
+
+.rated_movies .text .btns .btn {
+    color: var(--white);
+    font-size: 1.8rem;
+    border-left: .2rem solid var(--white);
+    border-right: .2rem solid var(--white);
+    padding: 0 1rem;
+    margin-right: 1rem;
+    font-weight: 900;
+}
+
+.rated_movies .text .btns .btn:hover {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.rated_movies .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rated_movies .box-container .box {
+    background-color: var(--grey);
+    box-shadow: .1rem .5rem 1rem #666;
+    margin: 1rem 0;
+}
+
+.rated_movies .box-container .box img {
+    height: 35rem;
+    width: 25rem;
+    object-fit: cover;
+}
+
+.rated_movies .box-container .box .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.rated_movies .box-container .box .title h3 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: .5rem 0;
+}
+
+.rated_movies .box-container .box .title p {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: .5rem 0;
+}
+
+.rated_movies .box-container .box .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+}
+
+.rated_movies .box-container .box .content .res {
+    padding: 1rem;
+    color: var(--white);
+    border: .2rem solid var(--red);
+}
+
+.rated_movies .box-container .box .content .time {
+    color: var(--white);
+    font-size: 1.4rem;
+    text-transform: lowercase;
+}
+
+.rated_movies .box-container .box .content .time i {
+    color: var(--red);
+    margin-right: .5rem;
+}
+
+.rated_movies .box-container .box .content .star {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.rated_movies .box-container .box .content .star i {
+    color: yellow;
+    margin-right: 1rem;
+}
+
+/*  Estilo do cadastro */
+.sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    background-color: var(--red);
+    padding: 3rem 5%;
+}
+
+.sub .text h3 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.sub .text p {
+    color: var(--white);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.sub .input {
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    border: .1rem solid var(--light-black);
+}
+
+.sub .input input {
+    text-transform: lowercase;
+    width: 60%;
+}
+
+.sub .input .btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--grey);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.sub .input .btn:hover {
+    scale: 1.1;
+    color: var(--red);
+}
+
+/* Estilo do Rodapé */
+.footer {
+    background-color: var(--grey);
+    padding: 3rem 5%;
+}
+
+.footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: .1rem solid var(--white);
+    padding-bottom: 2rem;
+}
+
+.footer .links .logo {
+    font-size: 2rem;
+    color: var(--red);
+    font-weight: 800;
+
+}
+
+.footer .links .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.footer .links .navbar a {
+    font-size: 1.4rem;
+    color: var(--white);
+    font-weight: 900;
+}
+
+.footer .links .navbar a:hover {
+    color: var(--red);
+}
+
+.footer .credit {
+    text-align: center;
+    color: var(--white);
+    text-transform: lowercase;
+    font-size: 1.9rem;
+}
+
+.footer .credit span {
+    text-transform: lowercase;
+    color: var(--red);
+    font-weight: 600;
+}
+
+
+/* Estilo Responsivo */
+
+@media(max-width:900px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        padding: 2rem 0;
+        background-color: var(--grey);
+    }
+}
+
+@media(max-width:700px) {
+    .header .navbar .btns {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+        background-color: var(--grey);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .movie .box-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:420px) {
+    html {
+        font-size: 40%;
+    }
+
+    .movie {
+        padding: 1rem;
+    }
+
+    .movie .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .movie .head .text {
+        text-align: center;
+    }
+
+    .header {
+        padding: 1rem 0;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .about .image {
+        width: 40%;
+    }
+
+    .about .image img {
+        height: 25rem;
+    }
+
+    .sub {
+        flex-wrap: wrap;
+    }
+
+    .footer .links {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
