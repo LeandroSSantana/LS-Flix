@@ -2,6 +2,8 @@
 
 Um projeto simples de site em HTML e CSS que simula uma plataforma de vídeos., Porém responsivo para todos os tipos de telas
 
+https://leandrossantana.github.io/LS-Flix/
+
 ## Demonstração
 
 ![image](https://github.com/LeandroSSantana/LS-Flix/assets/91376715/1faec13e-5126-49f9-9cbd-da7783b58563)
